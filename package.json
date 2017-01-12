@@ -1,0 +1,39 @@
+{
+  "name": "heymiguel-30",
+  "version": "1.0.0",
+  "description": "json for the new folio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heymiguel/heymiguel-three-oh.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heymiguel/heymiguel-three-oh/issues"
+  },
+  "homepage": "https://github.com/heymiguel/heymiguel-three-oh#readme",
+  "devDependencies": {
+
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "browser-sync": "^2.18.6",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-include": "^2.3.1",
+    "gulp-newer": "^1.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8"
+  }
+}
