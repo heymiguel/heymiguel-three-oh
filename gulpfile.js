@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
-  sass = require('gulp-ruby-sass'),
+  sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
   autoprefixer = require('gulp-autoprefixer'),
   cssnano = require('gulp-cssnano'),
@@ -39,7 +39,7 @@ gulp.task('browser-sync', ['sass'], function(gulpCallback) {
     gulp.watch('dist/*.html').on('change', browserSync.reload);
     gulp.watch('dist/js/*.js').on('change', browserSync.reload);
     gulp.watch('dist/img/**/*').on('change', browserSync.reload);
-    gulp.watch(paths.sass, ['sass']);
+    gulp.watch(paths.sass, ['sass']).on('change', browserSync.reload);
     gulpCallback();
   });
 });
@@ -54,7 +54,7 @@ gulp.task('html', function() {
 
 // TASK: Compile Sass
 gulp.task('sass', function() {
-  return sass('src/scss/main.scss', { sourcemap: true, style: 'compact' })
+  return gulp.src('./scss/**/*.scss', { sourcemap: true, style: 'compact' })
     .on('error', function(err) {
       console.error('Error!', err.message);
     })
