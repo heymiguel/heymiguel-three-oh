@@ -1,8 +1,11 @@
+@import "reset.scss";
 @import "components/_all.scss";
-@import "structure/grid/_all.sass";
+@import "structure/grid/_all.scss";
 @import "variables.scss";
 
+//begin custom stuff
 
-body{
-  background: blue;
-}
+@import "sections/_all.scss";
+
+
+
