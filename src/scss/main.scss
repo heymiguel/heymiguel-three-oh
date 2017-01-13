@@ -1,11 +1,45 @@
 @import "reset.scss";
-@import "components/_all.scss";
-@import "structure/grid/_all.scss";
-@import "variables.scss";
+@import "variables";
+@import "components/_all";
+@import "structure/grid/_all";
+// globals
+h1 {
+  font-size: 5rem;
+  font-family: 'Space Mono', 'Courier New', serif;
+  text-transform: uppercase;
+  padding: 5%;
+  color: white;
+  position: relative;
+  max-width: 400px;
+}
+
+p {
+  font-family: 'Work Sans', 'Arial', serif;
+  font-weight: 200;
+  line-height: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Work Sans', 'Arial', serif;
+  text-transform: uppercase;
+  color: $background-dark-blue;
+  &* {
+    text-decoration: none;
+  }
+}
+
+body {
+  background: $background-dark-blue;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Mono', 'Courier New', serif;
+  }
+}
 
 //begin custom stuff
-
 @import "sections/_all.scss";
-
-
-

@@ -1,12 +1,27 @@
-html{
-    font-size: 16px;//base
+html {
+  font-size: 16px; //base
 }
 
-.green-title{
-    background: $neongreen;
-    font-family: 'Space Mono', 'Courier New', serif;
-    color: $background-text-blue;
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 2% 3%;
+section {
+  margin-bottom: 3rem;
 }
+
+.green-title {
+  background: $neongreen;
+  font-family: 'Space Mono', 'Courier New', serif;
+  color: $background-text-blue;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 2% 3%;
+}
+
+.pink-subtitle {
+  background: $neonpink;
+  font-family: 'Space Mono', 'Courier New', serif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding: 1% 2%;
+}
+
+//pink title goes here
+//text-boxes content box also go here

@@ -54,14 +54,18 @@ gulp.task('html', function() {
 
 // TASK: Compile Sass
 
-gulp.task('sass', function () {
- return gulp.src('src/scss/main.scss')
-  .pipe(sourcemaps.init())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest('dist/css'))
-  .pipe(browserSync.stream({ match: '**/*.css' }))
-  .pipe(notify({ message: 'Sass task completed' }));
+gulp.task('sass', function() {
+  return gulp.src('src/scss/main.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(browserSync.stream({ match: '**/*.css' }))
+    .pipe(notify({ message: 'Sass task completed' }));
 });
 
 // TASK: Concatenate & Minify JS Files

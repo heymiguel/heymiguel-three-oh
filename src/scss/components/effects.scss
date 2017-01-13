@@ -1,0 +1,9 @@
+.blink {
+  animation: theBlink 1.5s linear infinite;
+}
+
+@keyframes theBlink {
+  50% {
+    opacity: 0;
+  }
+}
