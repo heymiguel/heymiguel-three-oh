@@ -39,7 +39,7 @@ gulp.task('browser-sync', ['sass'], function(gulpCallback) {
     gulp.watch('dist/*.html').on('change', browserSync.reload);
     gulp.watch('dist/js/*.js').on('change', browserSync.reload);
     gulp.watch('dist/img/**/*').on('change', browserSync.reload);
-    gulp.watch(paths.sass, ['sass']).on('change', browserSync.reload);
+    gulp.watch(paths.sass, ['sass']);
     gulpCallback();
   });
 });
@@ -53,18 +53,30 @@ gulp.task('html', function() {
 
 
 // TASK: Compile Sass
-gulp.task('sass', function() {
-  return gulp.src('./scss/**/*.scss', { sourcemap: true, style: 'compact' })
-    .on('error', function(err) {
-      console.error('Error!', err.message);
-    })
-    .pipe(sourcemaps.init())
-    .pipe(autoprefixer(['last 4 version'], { cascade: true }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(browserSync.stream({ match: '**/*.css' }))
-    .pipe(notify({ message: 'Sass task completed' }));
+
+gulp.task('sass', function () {
+ return gulp.src('src/scss/main.scss')
+  .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest('dist/css'))
+  .pipe(browserSync.stream({ match: '**/*.css' }))
+  .pipe(notify({ message: 'Sass task completed' }));
 });
+
+
+// gulp.task('sass', function() {
+//   return gulp.src('src/scss/main.scss', { sourcemap: true, style: 'compact' })
+//     .on('error', function(err) {
+//       console.error('Error!', err.message);
+//     })
+//     .pipe(sourcemaps.init())
+//     .pipe(autoprefixer(['last 4 version'], { cascade: true }))
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('dist/css'))
+//     .pipe(browserSync.stream({ match: '**/*.css' }))
+//     .pipe(notify({ message: 'Sass task completed' }));
+// });
 
 
 // TASK: Concatenate & Minify JS Files
