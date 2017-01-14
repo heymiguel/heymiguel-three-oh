@@ -1,0 +1,16 @@
+.about {
+  border-left: 4px solid $neongreen;
+  .description {
+    padding-bottom: 12px;
+  }
+  p {
+    font-size: .8rem;
+    color: white;
+    font-weight: 200;
+    padding: 12px 16px 0 12px;
+    background: $background-text-blue;
+    &:last-child {
+      padding-bottom: 12px;
+    }
+  }
+}

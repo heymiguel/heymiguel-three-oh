@@ -1,28 +1,46 @@
-html {
+html,
+body {
   font-size: 16px; //base
 }
 
 section {
   margin-bottom: 3rem;
+  .description {
+    position: relative;
+    &:after {
+      @include headerTriangle();
+      background-size: 96px auto;
+      right: -48px;
+      height: 96px;
+      width: 96px;
+    }
+  }
+  .content {
+    margin-top: 30px;
+    border-top: 3px solid $neongreen;
+    max-width: 95%;
+    .pink-subtitle {
+      max-width: 30%;
+      padding-left: 10%;
+    }
+  }
 }
 
 .green-title {
   background: $neongreen;
   font-family: 'Space Mono', 'Courier New', serif;
   color: $background-text-blue;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  padding: 2% 3%;
+  padding: 8px 12px;
 }
 
 .pink-subtitle {
   background: $neonpink;
   color: white;
-  font-family: 'Space Mono', 'Courier New', serif;
-  font-size: .9rem;
-  font-weight: normal;
-  padding: 1% 2%;
+  font-family: 'Work Sans', 'Courier New', serif;
+  font-size: .85rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 8px 12px;
 }
-
-//pink title goes here
-//text-boxes content box also go here

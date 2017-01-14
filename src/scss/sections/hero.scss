@@ -7,15 +7,7 @@
     width: 600px;
     position: relative;
     &:after {
-      position: absolute;
-      top: -9px;
-      right: -65px;
-      content: ' ';
-      display: block;
-      background-image: url('/img/diamond.svg');
-      background-size: 130px 130px;
-      height: 130px;
-      width: 130px;
+      @include headerTriangle();
     }
   }
   .intro {
