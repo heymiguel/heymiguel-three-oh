@@ -1,16 +1,37 @@
 .portfolio {
   .piece {
+    margin-bottom: 15px;
     min-height: 400px;
+    position: relative;
     border-bottom: 1px solid $neongreen;
-    &.item-one {}
-    &.item-two {}
-    &.item-three {}
+    &.item-one {
+      background: url("https://unsplash.it/800/?random");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.item-two {
+      background: url("https://unsplash.it/800/?random");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.item-three {
+      background: url("https://unsplash.it/800/?random");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .blue-button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
   }
   .piece-description {
     max-width: 40%;
-    background: $background-text-blue;
+    background: rgba(21, 57, 90, 0.5);
     min-height: 300px;
-    p {}
+    p {
+      background: none;
+    }
     .piece-title {
       display: inline-block;
       font-family: 'Space Mono';
@@ -18,5 +39,8 @@
       padding: 8px 12px;
       border-bottom: $neonpink 1px solid;
     }
+  }
+  .tags {
+    padding: 12px;
   }
 }

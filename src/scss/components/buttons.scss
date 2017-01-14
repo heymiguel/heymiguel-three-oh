@@ -1,7 +1,7 @@
 .blue-button {
   padding: 5px 10px;
   text-align: center;
-  font-family: inherit;
+  font-family: 'Space Mono', 'serif';
   background: $neoncyan;
   text-transform: uppercase;
   font-size: .9rem;
@@ -11,4 +11,18 @@
       border-bottom: 2px solid $neonpink;
     }
   }
+}
+
+.blue-tag {
+  padding: 5px 10px;
+  text-align: center;
+  font-family: 'Space Mono', 'serif';
+  font-style: italic;
+  display: inline-block;
+  border: 1px solid $neoncyan;
+  color: white;
+  font-size: .7rem;
+  font-weight: 400;
+  background: $iconblue;
+  margin: 2px 0px;
 }
