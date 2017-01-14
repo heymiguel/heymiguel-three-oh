@@ -5,8 +5,20 @@ body {
 
 section {
   margin-bottom: 3rem;
+  p {
+    font-size: .8rem;
+    color: white;
+    font-weight: 200;
+    padding: 12px 16px 0 12px;
+    &:last-child {
+      padding-bottom: 12px;
+    }
+  }
   .description {
     position: relative;
+    padding-bottom: 12px;
+    border-left: 4px solid $neongreen;
+    background: $background-text-blue;
     &:after {
       @include headerTriangle();
       background-size: 96px auto;
@@ -18,10 +30,15 @@ section {
   .content {
     margin-top: 30px;
     border-top: 3px solid $neongreen;
+    border-left: 1px solid $neongreen;
     max-width: 95%;
     .pink-subtitle {
       max-width: 30%;
       padding-left: 10%;
+    }
+    &.last {
+      margin: 0;
+      min-height: 400px;
     }
   }
 }
