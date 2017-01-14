@@ -3,6 +3,33 @@ body {
   font-size: 16px; //base
 }
 
+.green-title {
+  background: $neongreen;
+  font-family: 'Space Mono', 'Courier New', serif;
+  color: $background-text-blue;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.pink-subtitle {
+  background: $neonpink;
+  color: white;
+  font-family: 'Work Sans', 'Courier New', serif;
+  font-size: .95rem;
+  font-weight: 400;
+  padding: 8px 30px;
+  display: inline-block;
+}
+
+.icon {
+  border: 1px solid $neoncyan;
+  background: $iconblue;
+  font-size: 1.5rem;
+  color: white;
+  display: inline-block;
+}
+
 section {
   margin-bottom: 3rem;
   p {
@@ -26,38 +53,22 @@ section {
       height: 96px;
       width: 96px;
     }
+    .pink-subtitle {
+      display: block;
+      padding: 8px 12px;
+    }
   }
   .content {
-    margin-top: 30px;
+    margin-top: 35px;
     border-top: 3px solid $neongreen;
     border-left: 1px solid $neongreen;
     max-width: 95%;
-    .pink-subtitle {
-      max-width: 30%;
-      padding-left: 10%;
-    }
     &.last {
       margin: 0;
       min-height: 400px;
     }
+    .pink-subtitle {
+      padding-left: 30px;
+    }
   }
-}
-
-.green-title {
-  background: $neongreen;
-  font-family: 'Space Mono', 'Courier New', serif;
-  color: $background-text-blue;
-  font-size: 1.1rem;
-  font-weight: bold;
-  padding: 8px 12px;
-}
-
-.pink-subtitle {
-  background: $neonpink;
-  color: white;
-  font-family: 'Work Sans', 'Courier New', serif;
-  font-size: .85rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  padding: 8px 12px;
 }

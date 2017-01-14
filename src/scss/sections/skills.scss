@@ -1,0 +1,26 @@
+section.skills {
+  ul {
+    padding: 10px 15px;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p {
+        color: white;
+        line-height: 14px;
+        display: inline-block;
+        padding: 10px 14px 10px 8px;
+      }
+    }
+  }
+  .developer-and-designer {
+    margin: 0;
+    .pink-subtitle {}
+  }
+  .developer {
+    padding: 0;
+  }
+  .designer {
+    padding: 0;
+  }
+}
