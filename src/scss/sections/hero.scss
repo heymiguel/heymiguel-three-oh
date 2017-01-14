@@ -1,10 +1,10 @@
 .hero {
-  padding: 10%;
+  padding: 10% 2%;
   background: url('/img/toronto-ferdinand-stohr.jpg') no-repeat;
   background-size: cover;
   .name {
     background: $neonpink;
-    width: 600px;
+    width: 500px;
     position: relative;
     &:after {
       @include headerTriangle();

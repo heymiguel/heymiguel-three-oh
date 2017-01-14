@@ -3,6 +3,10 @@ body {
   font-size: 16px; //base
 }
 
+.wrapper {
+  margin: 0 auto;
+}
+
 .green-title {
   background: $neongreen;
   font-family: 'Space Mono', 'Courier New', serif;
@@ -44,7 +48,8 @@ section {
   .description {
     position: relative;
     padding-bottom: 12px;
-    border-left: 4px solid $neongreen;
+    border-left: 3px solid $neongreen;
+    border-right: 1px solid $neongreen;
     background: $background-text-blue;
     &:after {
       @include headerTriangle();
@@ -59,10 +64,8 @@ section {
     }
   }
   .content {
-    margin-top: 35px;
-    border-top: 3px solid $neongreen;
-    border-left: 1px solid $neongreen;
-    max-width: 95%;
+    border-top: 1px solid $neongreen;
+    border-right: 1px solid $neongreen;
     &.last {
       margin: 0;
       min-height: 400px;
