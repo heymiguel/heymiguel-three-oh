@@ -1,0 +1,22 @@
+.portfolio {
+  .piece {
+    min-height: 400px;
+    border-bottom: 1px solid $neongreen;
+    &.item-one {}
+    &.item-two {}
+    &.item-three {}
+  }
+  .piece-description {
+    max-width: 40%;
+    background: $background-text-blue;
+    min-height: 300px;
+    p {}
+    .piece-title {
+      display: inline-block;
+      font-family: 'Space Mono';
+      // font-size: .8rem;
+      padding: 8px 12px;
+      border-bottom: $neonpink 1px solid;
+    }
+  }
+}

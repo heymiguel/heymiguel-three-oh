@@ -13,7 +13,8 @@ body {
   color: $background-text-blue;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 8px 20px 8px 8px;
+  display: inline-block;
 }
 
 .pink-subtitle {
@@ -24,6 +25,7 @@ body {
   font-weight: 400;
   padding: 8px 30px;
   display: inline-block;
+  max-width: auto;
 }
 
 .icon {
@@ -49,18 +51,26 @@ section {
     position: relative;
     padding-bottom: 12px;
     border-left: 3px solid $neongreen;
-    border-right: 1px solid $neongreen;
-    background: $background-text-blue;
-    &:after {
-      @include headerTriangle();
-      background-size: 96px auto;
-      right: -48px;
-      height: 96px;
-      width: 96px;
+    // border-right: 1px solid $neongreen;
+    // background: $background-text-blue;
+    .green-title {
+      position: relative;
+      &:after {
+        @include headerTriangle();
+        background-size: 44px auto;
+        top: 0px;
+        right: -24px;
+        height: 46px;
+        width: 46px;
+      }
     }
     .pink-subtitle {
       display: block;
       padding: 8px 12px;
+      border-top: 3px solid $neongreen;
+    }
+    p {
+      background: $background-text-blue;
     }
   }
   .content {
@@ -68,7 +78,7 @@ section {
     border-right: 1px solid $neongreen;
     &.last {
       margin: 0;
-      min-height: 400px;
+      min-height: 200px;
     }
     .pink-subtitle {
       padding-left: 30px;

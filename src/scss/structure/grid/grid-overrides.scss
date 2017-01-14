@@ -1,4 +1,11 @@
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  .column {
+    // padding: 0;
+  }
+}
+
+.right {
+  padding-left: 3.5%;
 }
