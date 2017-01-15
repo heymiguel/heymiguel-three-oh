@@ -42,7 +42,7 @@ section {
     font-size: .8rem;
     color: white;
     font-weight: 200;
-    padding: 12px 16px 0 12px;
+    padding: 12px 16px 12px;
     &:last-child {
       padding-bottom: 12px;
     }
@@ -75,7 +75,7 @@ section {
   }
   .content {
     border-top: 1px solid $neongreen;
-    border-right: 1px solid $neongreen;
+    border-left: 3px solid $neongreen;
     &.last {
       margin: 0;
       min-height: 200px;

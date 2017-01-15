@@ -19,11 +19,6 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .blue-button {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-    }
   }
   .piece-description {
     max-width: 40%;
@@ -38,6 +33,10 @@
       // font-size: .8rem;
       padding: 8px 12px;
       border-bottom: $neonpink 1px solid;
+    }
+    .blue-button {
+      display: inline-block;
+      margin: 10px;
     }
   }
   .tags {

@@ -1,0 +1,57 @@
+.contact {
+  position: relative;
+  .socials {
+    background: $background-text-blue;
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      li {
+        width: 32%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      p {
+        text-transform: none;
+        padding: 3px 6px;
+      }
+    }
+  }
+  form {
+    background: $background-text-blue;
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      border-bottom: 1px solid $neongreen;
+      background: none;
+      color: white;
+    }
+    textarea {
+      margin: 10px 0 10px 0;
+      padding: 10px 0 10px 10px;
+      overflow: hidden;
+    }
+    fieldset {
+      &.message {
+        display: block;
+      }
+      display: inline-block;
+      margin-right: 3%;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-style: none;
+    }
+    .sender-email,
+    .sender-name {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}

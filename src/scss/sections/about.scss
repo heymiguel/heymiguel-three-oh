@@ -1,1 +1,13 @@
-.about {}
+.about {
+  .description {
+    position: relative;
+    .blue-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  ul {
+    li {}
+  }
+}
