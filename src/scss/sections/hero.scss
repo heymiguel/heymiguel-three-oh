@@ -2,6 +2,12 @@
   padding: 10% 2%;
   background: url('/img/toronto-ferdinand-stohr.jpg') no-repeat;
   background-size: cover;
+  position: relative;
+  min-height: 40vh;
+  .container {
+    position: absolute;
+    z-index: 5;
+  }
   .name {
     background: $neonpink;
     width: 500px;
