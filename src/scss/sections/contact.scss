@@ -1,22 +1,7 @@
 .contact {
   position: relative;
-  .socials {
-    background: $background-text-blue;
-    ul {
-      display: flex;
-      flex-direction: row;
-      padding: 10px;
-      li {
-        width: 32%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-      }
-      p {
-        text-transform: none;
-        padding: 3px 6px;
-      }
-    }
+  p a {
+    @include inlineLink();
   }
   form {
     background: $background-text-blue;

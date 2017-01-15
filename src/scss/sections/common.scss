@@ -31,9 +31,15 @@ body {
 .icon {
   border: 1px solid $neoncyan;
   background: $iconblue;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white;
   display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section {

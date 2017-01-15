@@ -1,3 +1,42 @@
 footer {
-  background: $neongreen;
+  background: $background-text-blue;
+  border-top: 1px solid $neongreen;
+  p a {
+    @include inlineLink();
+  }
+  .socials {
+    background: $background-text-blue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .icon {
+      font-size: 1.1rem;
+    }
+    .copyrights {
+      padding: 10px;
+      p {
+        color: white;
+        font-size: .6rem;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 15px;
+      }
+      p {
+        text-transform: none;
+        padding: 3px 6px;
+        color: white;
+        font-size: .8rem;
+      }
+    }
+  }
 }

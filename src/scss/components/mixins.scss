@@ -10,3 +10,9 @@
   height: 130px;
   width: 130px;
 }
+
+@mixin inlineLink {
+  color: white;
+  text-transform: none;
+  border-bottom: 1px solid $neoncyan;
+}
