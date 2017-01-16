@@ -8,14 +8,16 @@
   font-weight: 500;
   display: inline-block;
   &:hover {
-    transition: all .3s ease .1s;
+    transition: all .3s 0.3s .1s;
     background-color: $neonpink;
+    // border-bottom: 2px solid white;
     color: white;
   }
-  a {
+  & a {
     &:hover {
       transition: border-bottom 0.3s 0.3s 0.3s;
       border-bottom: 2px solid white;
+      color: white;
     }
   }
 }
