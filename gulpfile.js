@@ -37,7 +37,7 @@ gulp.task('browser-sync', ['sass'], function(gulpCallback) {
     ghostMode: false
   }, function callback() {
     gulp.watch('dist/*.html').on('change', browserSync.reload);
-    gulp.watch('dist/js/*.js').on('change', browserSync.reload);
+    gulp.watch('dist/js/**/*').on('change', browserSync.reload);
     gulp.watch('dist/img/**/*').on('change', browserSync.reload);
     gulp.watch(paths.sass, ['sass']);
     gulpCallback();
@@ -70,12 +70,9 @@ gulp.task('sass', function() {
 
 // TASK: Concatenate & Minify JS Files
 gulp.task('scripts', function() {
-  return gulp.src('src/js/app.js')
+  return gulp.src(paths.js)
     .pipe(include())
     .on('error', console.log)
-    .pipe(gulp.dest('dist/js'))
-    .pipe(uglify().on('error', gutil.log))
-    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist/js'))
     .pipe(notify({ message: 'Scripts task completed' }));
 });

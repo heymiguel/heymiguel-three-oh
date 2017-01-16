@@ -4,20 +4,18 @@
     min-height: 400px;
     position: relative;
     border-bottom: 1px solid $neongreen;
-    &.item-one {
-      background: url("https://unsplash.it/800/?random");
+    .item {
       background-repeat: no-repeat;
       background-size: cover;
     }
-    &.item-two {
+    .item-one {
       background: url("https://unsplash.it/800/?random");
-      background-repeat: no-repeat;
-      background-size: cover;
     }
-    &.item-three {
+    .item-two {
       background: url("https://unsplash.it/800/?random");
-      background-repeat: no-repeat;
-      background-size: cover;
+    }
+    .item-three {
+      background: url("https://unsplash.it/800/?random");
     }
   }
   .piece-description {
