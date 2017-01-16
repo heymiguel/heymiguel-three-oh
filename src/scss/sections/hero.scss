@@ -1,12 +1,12 @@
 .hero {
-  padding: 10% 2%;
+  padding: 5% 2%;
   background: url('/img/toronto-ferdinand-stohr.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 40vh;
+  // min-height: 40vh;
   .container {
-    position: absolute;
-    z-index: 5;
+    // position: absolute;
+    // z-index: 5;
   }
   .name {
     background: $neonpink;
