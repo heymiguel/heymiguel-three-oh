@@ -3,7 +3,26 @@
   background: url('/img/toronto-ferdinand-stohr.jpg') no-repeat;
   background-size: cover;
   position: relative;
-  // min-height: 40vh;
+  overflow: hidden;
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    // hide on mobile!
+    .video {
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
   .container {
     // position: absolute;
     // z-index: 5;
@@ -33,7 +52,7 @@
       border-left: 4px solid $neongreen;
       background: none;
       p {
-        background: rgba(13, 36, 53, 0.5);
+        background: rgba(13, 36, 53, 0.8);
         color: white;
         padding: 2% 3%;
         font-size: .85rem;

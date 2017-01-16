@@ -16,7 +16,7 @@
 /* REGULAR SCANLINES SETTINGS */
 
 // width of 1 scanline (min.: 1px)
-$scan-width: 1px;
+$scan-width: 2px;
 // emulates a damage-your-eyes bad pre-2000 CRT screen ♥ (true, false)
 $scan-crt: true;
 // frames-per-second (should be > 1), only applies if $scan-crt: true;
