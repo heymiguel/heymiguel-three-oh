@@ -9,7 +9,7 @@ function listeners() {
    });
 };
 
-
+// do you want to put typing effects :P
 
 document.addEventListener('DOMContentLoaded', function() {
    listeners();
