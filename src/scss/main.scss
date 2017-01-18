@@ -34,13 +34,9 @@ a {
 }
 
 body {
-  background: $background-dark-blue;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  background-color: $background-dark-blue;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  h1, h2, h3, h4, h5, h6 {
     color: white;
   }
 }
