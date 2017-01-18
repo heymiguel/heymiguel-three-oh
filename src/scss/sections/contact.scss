@@ -8,24 +8,26 @@
     input,
     textarea {
       display: block;
-      width: 100%;
+      width: 80%;
       padding: 10px;
       border: 0;
       border-bottom: 1px solid $neongreen;
       background: none;
       color: white;
+      font-family: 'Roboto Mono', monospace;
     }
     textarea {
+      width: 94%;
       margin: 10px 0 10px 0;
       padding: 10px 0 10px 10px;
       overflow: hidden;
+      font-family: 'Roboto Mono', monospace;
     }
     fieldset {
       &.message {
         display: block;
       }
       display: inline-block;
-      margin-right: 3%;
     }
     button {
       position: absolute;
@@ -36,7 +38,6 @@
     .sender-email,
     .sender-name {
       display: inline-block;
-      width: auto;
     }
   }
 }

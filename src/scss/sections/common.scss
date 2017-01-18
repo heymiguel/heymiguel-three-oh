@@ -9,23 +9,23 @@ body {
 
 .green-title {
   background: $neongreen;
-  font-family: 'Space Mono', 'Courier New', serif;
+  font-family: 'Work Sans', sans-serif;
   color: black;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 400;
   padding: 8px 20px 8px 8px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .pink-subtitle {
   background: $neonpink;
   color: white;
-  font-family: 'Work Sans', 'Courier New', serif;
-  font-size: .95rem;
-  font-weight: 400;
-  padding: 8px 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 8px 12px;
   display: inline-block;
-  max-width: auto;
 }
 
 .icon {
@@ -45,9 +45,8 @@ body {
 section {
   margin-bottom: 2rem;
   p {
-    font-size: .8rem;
+    font-size: .7rem;
     color: white;
-    font-weight: 200;
     padding: 12px 16px 12px;
     &:last-child {
       padding-bottom: 12px;
@@ -85,9 +84,6 @@ section {
     &.last {
       margin: 0;
       min-height: 200px;
-    }
-    .pink-subtitle {
-      padding-left: 30px;
     }
   }
 }
