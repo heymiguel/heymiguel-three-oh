@@ -8,4 +8,7 @@
 
 .right {
   padding-left: 3.5%;
+  @include mobile {
+    padding-left: 0.75em;
+  }
 }

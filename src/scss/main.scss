@@ -8,6 +8,10 @@ h1 {
   font-family: 'Work Sans', 'Arial', serif;
   text-transform: uppercase;
   padding: 5%;
+  @include mobile {
+    font-size: 2.5rem;
+    padding: 2%;
+  }
   color: white;
   position: relative;
   max-width: 400px;

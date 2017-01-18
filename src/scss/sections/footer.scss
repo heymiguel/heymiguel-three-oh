@@ -7,10 +7,6 @@ footer {
   .socials {
     background: $background-text-blue;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     .icon {
       font-size: 1.1rem;
     }
@@ -24,12 +20,20 @@ footer {
     ul {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
       padding: 10px;
+      @include mobile {
+        display: block;
+      }
       li {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         margin-right: 15px;
+        @include mobile {
+          margin: 5px 0;
+        }
       }
       p {
         text-transform: none;

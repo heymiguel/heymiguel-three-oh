@@ -7,6 +7,9 @@
     .item {
       background-repeat: no-repeat;
       background-size: cover;
+      @include mobile {
+        min-height: 50vh;
+      }
     }
     .item-one {
       background: url("https://unsplash.it/800/?random");
@@ -22,6 +25,10 @@
     max-width: 40%;
     background: $background-text-blue;
     min-height: 300px;
+    @include mobile {
+      max-width: 100%;
+      min-height: auto;
+    }
     p {
       background: none;
     }

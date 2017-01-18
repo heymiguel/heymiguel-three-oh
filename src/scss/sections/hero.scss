@@ -34,13 +34,30 @@
   .name {
     background: $neonpink;
     width: 500px;
+    @include mobile {
+      width: 80%;
+    }
     position: relative;
     &:after {
       @include headerTriangle();
+      @include mobile {
+        display: none;
+      }
+    }
+    .glitch:after {
+      @include mobile {
+        left: 5px;
+        top: 5px;
+        width: auto;
+        height: auto;
+      }
     }
   }
   .intro {
     width: 600px;
+    @include mobile {
+      width: 70%;
+    }
     position: relative;
     .columns,
     .column {
