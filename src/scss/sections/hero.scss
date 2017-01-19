@@ -5,6 +5,12 @@
   position: relative;
   overflow: hidden;
   height: 55vh;
+  @include mobile {
+    height: 100vh;
+    @include landscape {
+      min-height: 450px;
+    }
+  }
   .video-bg {
     position: absolute;
     top: 0;
@@ -51,6 +57,9 @@
         top: 1vh;
         width: 85%;
         height: 200px;
+        @include landscape {
+          top: 3vh;
+        }
       }
     }
   }
@@ -65,8 +74,7 @@
       }
     }
     position: relative;
-    .columns,
-    .column {
+    .columns, .column {
       padding: 0;
       margin: 0;
     }
@@ -75,7 +83,12 @@
       background: url('/img/PAM_8933.png') no-repeat;
       background-size: cover;
       @include mobile {
-        width: 45%;
+        background-size: contain;
+        height: 200px;
+        width: auto;
+        @include landscape {
+          height: 100px;
+        }
       }
     }
     .intro-blurb {
