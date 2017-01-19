@@ -6,19 +6,22 @@
     border-bottom: 1px solid $neongreen;
     .item {
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       @include mobile {
         min-height: 50vh;
       }
     }
     .item-one {
-      background: url("https://unsplash.it/800/?random");
+      background: url("/img/marvel-fam.png");
+      background-size: cover;
     }
     .item-two {
-      background: url("https://unsplash.it/800/?random");
+      background: url("/img/scotia-digital-centre.png");
+      background-size: cover;
     }
     .item-three {
-      background: url("https://unsplash.it/800/?random");
+      background: url("/img/hy-dnd.png");
+      background-size: cover;
     }
   }
   .piece-description {
