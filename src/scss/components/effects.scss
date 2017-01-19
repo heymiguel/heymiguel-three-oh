@@ -89,7 +89,7 @@ $scan-opacity: .75;
     bottom: 0;
     left: 0;
     z-index: $scan-z-index;
-    background: linear-gradient( to bottom, transparent 50%, $scan-color 51%);
+    background: linear-gradient( to bottom, transparent 50%, $scan-color 21%);
     background-size: 100% $scan-width*2;
     @include scan-crt($scan-crt);
   }

@@ -15,7 +15,6 @@ body {
   font-weight: 400;
   padding: 8px 20px 8px 8px;
   display: inline-block;
-  text-transform: uppercase;
 }
 
 .pink-subtitle {
@@ -40,6 +39,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  &.vue {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 section {

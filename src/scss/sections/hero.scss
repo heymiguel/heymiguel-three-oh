@@ -46,10 +46,10 @@
     }
     .glitch:after {
       @include mobile {
-        left: 5px;
-        top: 5px;
-        width: auto;
-        height: auto;
+        left: 1.5vw;
+        top: 1vh;
+        width: 85%;
+        height: 200px;
       }
     }
   }
@@ -57,6 +57,11 @@
     width: 600px;
     @include mobile {
       width: 70%;
+    }
+    .scanlines:after {
+      @include mobile {
+        opacity: 0.5;
+      }
     }
     position: relative;
     .columns,
@@ -66,7 +71,7 @@
     }
     .intro-pic {
       height: 200px;
-      background: url('https://unsplash.it/300/300') no-repeat;
+      background: url('/img/PAM_8933.png') no-repeat;
       background-size: cover;
     }
     .intro-blurb {
@@ -83,6 +88,9 @@
         ul {
           display: flex;
           flex-direction: row;
+          @include mobile {
+            flex-wrap: wrap;
+          }
         }
         li {
           margin: 5px;
