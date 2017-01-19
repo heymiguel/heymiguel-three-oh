@@ -4,6 +4,7 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
+  height: 55vh;
   .video-bg {
     position: absolute;
     top: 0;
@@ -73,6 +74,9 @@
       height: 200px;
       background: url('/img/PAM_8933.png') no-repeat;
       background-size: cover;
+      @include mobile {
+        width: 45%;
+      }
     }
     .intro-blurb {
       border-left: 4px solid $neongreen;
