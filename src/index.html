@@ -236,19 +236,42 @@
                   </p>
                   <h3 class="pink-subtitle">send me a message</h3>
                   <form id="contact" action="http://www.focuspocus.io/magic/67abc0d702c6dd003ee320523c664172" method="post">
-                     <fieldset>
-                        <input name="sender-name" class="sender-name" placeholder="Your name" type="text" tabindex="1" required>
+                     <fieldset class="hide-me">
+                        <input name="sender-name" class="sender-name" placeholder="Your name" type="text" required>
+                     </fieldset>
+                     <fieldset class="hide-me">
+                        <input name="sender-email" class="sender-email" placeholder="Your Email Address" type="email" required>
+                     </fieldset>
+                     <fieldset class="message hide-me">
+                        <textarea class="sender-message" name="sender-message" placeholder="Type your Message Here...." required></textarea>
                      </fieldset>
                      <fieldset>
-                        <input name="sender-email" class="sender-email" placeholder="Your Email Address" type="email" tabindex="2" required>
-                     </fieldset>
-                     <fieldset class="message">
-                        <textarea class="sender-message" name="sender-message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
-                     </fieldset>
-                     <fieldset>
-                        <button name="submit" class="blue-button" type="submit" id="contact-submit" data-submit="...Sending" value="submit">SEND</button>
+                        <button class="blue-button hide-me" type="submit" id="contact-submit" data-submit="...Sending" value="submit">SEND</button>
                      </fieldset>
                   </form>
+                  <div class="contact-bot-messages">
+                     <p>
+                        Hey! I'm a form. Can I get your name?
+                     </p>
+                     <div class="bot-name">
+                        <input name="chatbot-name" class="chatbot-name" placeholder="Your name" type="text" required>
+                        <button class="chatbot-name-next"><i class="fa fa-mail-reply" aria-hidden="true"></i></button>
+                     </div>
+                     <div class="bot-email hide-me">
+                        <input name="chatbot-email" class="chatbot-email" placeholder="Your email" type="text" required>
+                        <button class="chatbot-email-next"><i class="fa fa-mail-reply" aria-hidden="true"></i></button>
+                     </div>
+                     <div class="bot-message hide-me">
+                        <textarea name="chatbot-message" class="chatbot-message" placeholder="Your message" type="textfield" required></textarea>
+                        <button class="chatbot-text-next"><i class="fa fa-mail-reply" aria-hidden="true"></i></button>
+                     </div>
+
+                  </div>
+
+
+
+
+
                </div>
             </div>
          </section>

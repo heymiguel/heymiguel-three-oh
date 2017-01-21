@@ -5,6 +5,7 @@
   }
   form {
     background: $background-text-blue;
+    height: 1px;
     input,
     textarea {
       display: block;
@@ -25,9 +26,9 @@
     }
     fieldset {
       &.message {
-        display: block;
+        // display: block;
       }
-      display: inline-block;
+      // display: inline-block;
     }
     button {
       position: absolute;
@@ -38,6 +39,36 @@
     .sender-email,
     .sender-name {
       display: inline-block;
+    }
+  }
+  .hide-me {
+    display: none;
+  }
+  .contact-bot-messages {
+    overflow: hidden;
+    min-height: 100px;
+    background: $background-text-blue;
+    padding: 10px;
+    p {
+      padding: 5px;
+      color: White;
+      font-weight: 500;
+    }
+    input,
+    textarea {
+      display: inline-block;
+      // width: 95%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $neongreen;
+      padding: 5px;
+      color: $neongreen;
+      font-weight: 200;
+    }
+    button {
+      background: none;
+      color: $neongreen;
+      border: none;
     }
   }
 }
