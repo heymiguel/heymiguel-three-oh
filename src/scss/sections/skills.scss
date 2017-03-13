@@ -1,20 +1,27 @@
 section.skills {
+  .description{
+    max-width: 40%;
+  }
   ul {
     padding: 10px 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    min-height: 200px;
+    align-items: flex-start;
+    align-content: flex-start;
     li {
       display: flex;
       flex-direction: row;
       align-items: center;
-      width: 32%;
-      margin-right: 22px;
+      align-content: flex-start;
+      justify-content: flex-start;
+      min-width: 120px;
       p {
         color: white;
         line-height: 14px;
         display: inline-block;
-        padding: 10px 14px 10px 8px;
+        padding: 10px;
       }
     }
   }

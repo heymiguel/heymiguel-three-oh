@@ -1,56 +1,30 @@
 .hero {
-  padding: 5% 2%;
-  background: url('/img/toronto-ferdinand-stohr.jpg') no-repeat;
-  background-size: cover;
+
   position: relative;
   overflow: hidden;
-  height: 55vh;
+  height: 100vh;
   @include mobile {
-    height: 100vh;
     @include landscape {
       min-height: 450px;
     }
   }
-  .video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    // hide on mobile!
-    video {
-      display: none;
-      @include desktop() {
-        display: block;
-        min-width: 100%;
-        min-height: 100%;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
+  .left-side{
+    background: url('/img/toronto-ferdinand-stohr.jpg') no-repeat;
+    background-size: cover;
   }
-  .container {
-    // position: absolute;
-    // z-index: 5;
+  .right-side{
+    background:$background-dark-blue;
+    padding: 5%;
+    flex-direction: column;
+  }
+  .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .name {
     background: $neonpink;
-    width: 500px;
-    @include mobile {
-      width: 80%;
-    }
     position: relative;
-    &:after {
-      @include headerTriangle();
-      @include mobile {
-        display: none;
-      }
-    }
     .glitch:after {
       @include mobile {
         left: 1.5vw;
@@ -63,21 +37,6 @@
       }
     }
   }
-  .intro {
-    width: 600px;
-    @include mobile {
-      width: 70%;
-    }
-    .scanlines:after {
-      @include mobile {
-        opacity: 0.5;
-      }
-    }
-    position: relative;
-    .columns, .column {
-      padding: 0;
-      margin: 0;
-    }
     .intro-pic {
       height: 200px;
       background: url('/img/PAM_8933.png') no-repeat;
@@ -92,7 +51,7 @@
       }
     }
     .intro-blurb {
-      border-left: 4px solid $neongreen;
+      padding: 10%;
       background: none;
       p {
         background: rgba(13, 36, 53, 0.8);
@@ -116,5 +75,23 @@
         }
       }
     }
+  .description {
+    position: relative;
+    p a {
+      text-transform: none;
+      color: white;
+      border-bottom: 1px solid #29F6EB;
+    }
+    p:last-of-type {
+      padding-bottom: 20px;
+    }
+    .blue-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  ul {
+    li {}
   }
 }
